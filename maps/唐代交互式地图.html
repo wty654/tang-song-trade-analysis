@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5934a33843a011c3a13b2121eb21e55d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    <h3 align="center" style="margin-top:10px;">唐代商业城市分布</h3>
+    
+            <div class="folium-map" id="map_5934a33843a011c3a13b2121eb21e55d" ></div>
+        
+</body>
+<script>    
+    
+            var map_5934a33843a011c3a13b2121eb21e55d = L.map(
+                "map_5934a33843a011c3a13b2121eb21e55d",
+                {
+                    center: [35.0, 105.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8a0037f6f57e187927119279b52b0d4f = L.tileLayer(
+                "http://webrd02.is.autonavi.com/appmaptile?lang=zh_cn\u0026size=1\u0026scale=1\u0026style=7\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "\u9ad8\u5fb7\u5730\u56fe", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5934a33843a011c3a13b2121eb21e55d);
+        
+    
+            var circle_marker_4f8d02b2a2f66719892040a7545ab3b8 = L.circleMarker(
+                [30.67, 104.07],
+                {"bubblingMouseEvents": true, "color": "#D55E00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D55E00", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.293478260869566, "stroke": true, "weight": 2}
+            ).addTo(map_5934a33843a011c3a13b2121eb21e55d);
+        
+    
+        var popup_96045e351d6d0c22792c488d862c1618 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1973e31996b169abcf307388b08d5514 = $(`<div id="html_1973e31996b169abcf307388b08d5514" style="width: 100.0%; height: 100.0%;">成都（今四川成都）<br>出现次数: 316</div>`)[0];
+                popup_96045e351d6d0c22792c488d862c1618.setContent(html_1973e31996b169abcf307388b08d5514);
+            
+        
+
+        circle_marker_4f8d02b2a2f66719892040a7545ab3b8.bindPopup(popup_96045e351d6d0c22792c488d862c1618)
+        ;
+
+        
+    
+    
+            var circle_marker_8c442b6a5a5f917227d8a59a425b0058 = L.circleMarker(
+                [24.93, 118.58],
+                {"bubblingMouseEvents": true, "color": "#D55E00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D55E00", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.2228260869565215, "stroke": true, "weight": 2}
+            ).addTo(map_5934a33843a011c3a13b2121eb21e55d);
+        
+    
+        var popup_1b8362b73ba3653ecf297fd07e8c9960 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ad80059aae262574255faab71f3b7f9 = $(`<div id="html_5ad80059aae262574255faab71f3b7f9" style="width: 100.0%; height: 100.0%;">泉州（今福建泉州）<br>出现次数: 90</div>`)[0];
+                popup_1b8362b73ba3653ecf297fd07e8c9960.setContent(html_5ad80059aae262574255faab71f3b7f9);
+            
+        
+
+        circle_marker_8c442b6a5a5f917227d8a59a425b0058.bindPopup(popup_1b8362b73ba3653ecf297fd07e8c9960)
+        ;
+
+        
+    
+    
+            var circle_marker_850a6d259be65d851366b10fffcc6f6a = L.circleMarker(
+                [30.28, 120.15],
+                {"bubblingMouseEvents": true, "color": "#D55E00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D55E00", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.793478260869565, "stroke": true, "weight": 2}
+            ).addTo(map_5934a33843a011c3a13b2121eb21e55d);
+        
+    
+        var popup_a8222e4ffc388655b0edb0eab21ed04c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02d0a7d368b46175d2fcaff976cd1980 = $(`<div id="html_02d0a7d368b46175d2fcaff976cd1980" style="width: 100.0%; height: 100.0%;">杭州（今浙江杭州）<br>出现次数: 132</div>`)[0];
+                popup_a8222e4ffc388655b0edb0eab21ed04c.setContent(html_02d0a7d368b46175d2fcaff976cd1980);
+            
+        
+
+        circle_marker_850a6d259be65d851366b10fffcc6f6a.bindPopup(popup_a8222e4ffc388655b0edb0eab21ed04c)
+        ;
+
+        
+    
+    
+            var circle_marker_ea90f455aaace568f31e44521e4bce92 = L.circleMarker(
+                [32.06, 118.78],
+                {"bubblingMouseEvents": true, "color": "#D55E00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D55E00", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.271739130434782, "stroke": true, "weight": 2}
+            ).addTo(map_5934a33843a011c3a13b2121eb21e55d);
+        
+    
+        var popup_3af5e00dd93ca29956759d236f91246d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbdefbbd5d586f974cdb14c1ceb91749 = $(`<div id="html_dbdefbbd5d586f974cdb14c1ceb91749" style="width: 100.0%; height: 100.0%;">建康（今江苏南京）<br>出现次数: 20</div>`)[0];
+                popup_3af5e00dd93ca29956759d236f91246d.setContent(html_dbdefbbd5d586f974cdb14c1ceb91749);
+            
+        
+
+        circle_marker_ea90f455aaace568f31e44521e4bce92.bindPopup(popup_3af5e00dd93ca29956759d236f91246d)
+        ;
+
+        
+    
+    
+            var circle_marker_2bca2c9060ffdb83b06215329283d765 = L.circleMarker(
+                [30.35, 112.19],
+                {"bubblingMouseEvents": true, "color": "#D55E00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D55E00", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.736413043478262, "stroke": true, "weight": 2}
+            ).addTo(map_5934a33843a011c3a13b2121eb21e55d);
+        
+    
+        var popup_5d16f0666e001bd49adb863499d1fbfd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f8339108ce468c0d4dbbf83663b83a3 = $(`<div id="html_9f8339108ce468c0d4dbbf83663b83a3" style="width: 100.0%; height: 100.0%;">江陵（今湖北荆州）<br>出现次数: 275</div>`)[0];
+                popup_5d16f0666e001bd49adb863499d1fbfd.setContent(html_9f8339108ce468c0d4dbbf83663b83a3);
+            
+        
+
+        circle_marker_2bca2c9060ffdb83b06215329283d765.bindPopup(popup_5d16f0666e001bd49adb863499d1fbfd)
+        ;
+
+        
+    
+    
+            var circle_marker_252cc51259cbe12cb04831d039d8d6a9 = L.circleMarker(
+                [37.87, 112.55],
+                {"bubblingMouseEvents": true, "color": "#D55E00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D55E00", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.0, "stroke": true, "weight": 2}
+            ).addTo(map_5934a33843a011c3a13b2121eb21e55d);
+        
+    
+        var popup_832d12e547d49d8bf6190a30deafdb47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c14f5bcf3de3db4bd604ead1ef87d987 = $(`<div id="html_c14f5bcf3de3db4bd604ead1ef87d987" style="width: 100.0%; height: 100.0%;">太原（今山西太原）<br>出现次数: 1104</div>`)[0];
+                popup_832d12e547d49d8bf6190a30deafdb47.setContent(html_c14f5bcf3de3db4bd604ead1ef87d987);
+            
+        
+
+        circle_marker_252cc51259cbe12cb04831d039d8d6a9.bindPopup(popup_832d12e547d49d8bf6190a30deafdb47)
+        ;
+
+        
+    
+    
+            var circle_marker_0eb26955a6c26024a69863b8f5198ab6 = L.circleMarker(
+                [36.28, 115.14],
+                {"bubblingMouseEvents": true, "color": "#D55E00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D55E00", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.108695652173913, "stroke": true, "weight": 2}
+            ).addTo(map_5934a33843a011c3a13b2121eb21e55d);
+        
+    
+        var popup_049cde035cd3b6c247a5aa8d228e2acd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac8af67515b81d73a2789db3dd53d644 = $(`<div id="html_ac8af67515b81d73a2789db3dd53d644" style="width: 100.0%; height: 100.0%;">大名（今河北大名）<br>出现次数: 8</div>`)[0];
+                popup_049cde035cd3b6c247a5aa8d228e2acd.setContent(html_ac8af67515b81d73a2789db3dd53d644);
+            
+        
+
+        circle_marker_0eb26955a6c26024a69863b8f5198ab6.bindPopup(popup_049cde035cd3b6c247a5aa8d228e2acd)
+        ;
+
+        
+    
+    
+            var circle_marker_712f46ba55fe7b3ef3e05285dc179316 = L.circleMarker(
+                [29.87, 121.54],
+                {"bubblingMouseEvents": true, "color": "#D55E00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D55E00", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.380434782608695, "stroke": true, "weight": 2}
+            ).addTo(map_5934a33843a011c3a13b2121eb21e55d);
+        
+    
+        var popup_00469c465244ea8adc52197eeb27b747 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6ae64795b9a6c82ac2cd52d0c90c26b = $(`<div id="html_c6ae64795b9a6c82ac2cd52d0c90c26b" style="width: 100.0%; height: 100.0%;">明州（今浙江宁波）<br>出现次数: 28</div>`)[0];
+                popup_00469c465244ea8adc52197eeb27b747.setContent(html_c6ae64795b9a6c82ac2cd52d0c90c26b);
+            
+        
+
+        circle_marker_712f46ba55fe7b3ef3e05285dc179316.bindPopup(popup_00469c465244ea8adc52197eeb27b747)
+        ;
+
+        
+    
+    
+            var circle_marker_71463edbd0bc757892f93fc9aac76f02 = L.circleMarker(
+                [28.23, 112.94],
+                {"bubblingMouseEvents": true, "color": "#D55E00", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D55E00", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.440217391304348, "stroke": true, "weight": 2}
+            ).addTo(map_5934a33843a011c3a13b2121eb21e55d);
+        
+    
+        var popup_793fe8580400da155b41c4a42fa0ef89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ad34e5a9a7804db91efe3aeae495387 = $(`<div id="html_1ad34e5a9a7804db91efe3aeae495387" style="width: 100.0%; height: 100.0%;">潭州（今湖南长沙）<br>出现次数: 106</div>`)[0];
+                popup_793fe8580400da155b41c4a42fa0ef89.setContent(html_1ad34e5a9a7804db91efe3aeae495387);
+            
+        
+
+        circle_marker_71463edbd0bc757892f93fc9aac76f02.bindPopup(popup_793fe8580400da155b41c4a42fa0ef89)
+        ;
+
+        
+    
+</script>
